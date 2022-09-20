@@ -11,5 +11,15 @@
 svg {
   width: 1em;
   height: 1em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+html,
+body,
+#app,
+.el-container,
+.el-menu {
+  height: 100%;
 }
 </style>
