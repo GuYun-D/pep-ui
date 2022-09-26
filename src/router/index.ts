@@ -13,6 +13,9 @@ const routes: RouteRecordRaw[] = [
       }, {
         path: '/icon',
         component: () => import('../views/icon/index.vue')
+      }, {
+        path: '/area',
+        component: () => import('../views/area/index.vue')
       }
     ]
   },
