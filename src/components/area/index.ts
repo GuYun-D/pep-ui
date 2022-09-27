@@ -1,8 +1,8 @@
 import type { App } from 'vue'
-import Icon from './src/index.vue'
+import Area from './src/index.vue'
 
 export default {
   install(app: App) {
-    app.component('pep-icon', Icon)
+    app.component('pep-area', Area)
   }
 }
