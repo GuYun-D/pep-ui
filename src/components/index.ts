@@ -2,10 +2,12 @@ import type { App } from 'vue'
 
 import Area from './area'
 import Icon from './icon'
+import Trend from './trend'
 
 const components = [
   Area,
-  Icon
+  Icon,
+  Trend
 ]
 
 export default {
