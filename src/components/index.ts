@@ -3,11 +3,13 @@ import type { App } from 'vue'
 import Area from './area'
 import Icon from './icon'
 import Trend from './trend'
+import Menu from './menu'
 
 const components = [
   Area,
   Icon,
-  Trend
+  Trend,
+  Menu
 ]
 
 export default {
