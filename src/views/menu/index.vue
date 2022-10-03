@@ -4,6 +4,9 @@
       background-color="#f40"
       default-active="1"
       :data="data1"
+      name="a"
+      index="b"
+      icon="c"
     ></pep-menu> -->
 
     <pep-infinte-menu background-color="#f20" :data="data2"></pep-infinte-menu>
@@ -11,8 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { MenuItem } from "../../components/menu/src/types";
-const data1: MenuItem[] = [
+const data1 = [
   {
     name: "导航一",
     index: "1",
@@ -40,7 +42,7 @@ const data1: MenuItem[] = [
   },
 ];
 
-const data2: MenuItem[] = [
+const data2 = [
   {
     name: "导航一",
     index: "1",
