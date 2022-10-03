@@ -16,17 +16,17 @@ const data1: MenuItem[] = [
   {
     name: "导航一",
     index: "1",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航二",
     index: "2",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航三",
     index: "3",
-    icon: "document",
+    icon: "Document",
     children: [
       {
         name: "导航2.1",
@@ -44,17 +44,17 @@ const data2: MenuItem[] = [
   {
     name: "导航一",
     index: "1",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航二",
     index: "2",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航三",
     index: "3",
-    icon: "document",
+    icon: "Document",
     children: [
       {
         name: "导航2.1",

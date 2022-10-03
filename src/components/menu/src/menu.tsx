@@ -1,6 +1,7 @@
 import { defineComponent, PropType, useAttrs } from "vue";
-import { toLine } from "../../../utils";
 import { MenuItem } from "./types";
+import * as Icons from '@element-plus/icons'
+import './styles/index.scss'
 
 export default defineComponent({
   props: {
@@ -20,7 +21,7 @@ export default defineComponent({
   setup(props) {
     let renderMenu = (data: MenuItem[]) => {
       return data.map((item: MenuItem) => {
-        item.i = item.icon && `el-icon-${toLine(item.icon)}`;
+        item.i = item.icon && (Icons as any )[item.icon];
 
         const slots = {
           title: () => {
