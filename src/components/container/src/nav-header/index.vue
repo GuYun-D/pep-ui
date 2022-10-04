@@ -17,5 +17,9 @@ const toggle = () => {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+svg {
+  width: 1em;
+  height: 1em;
+}
 </style>

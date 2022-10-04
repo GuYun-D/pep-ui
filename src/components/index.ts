@@ -4,12 +4,14 @@ import Area from './area'
 import Icon from './icon'
 import Trend from './trend'
 import Menu from './menu'
+import Progress from './progress'
 
 const components = [
   Area,
   Icon,
   Trend,
-  Menu
+  Menu,
+  Progress
 ]
 
 export default {

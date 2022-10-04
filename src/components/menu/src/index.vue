@@ -68,8 +68,9 @@ withDefaults(
 
 <style scoped lang="scss">
 svg {
-  margin-right: 5px;
+  margin-right: 10px;
   width: 1em;
   height: 1em;
+  cursor: pointer;
 }
 </style>
