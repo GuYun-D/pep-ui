@@ -1,6 +1,6 @@
 # Trend 组件
 
-> 用于表示
+> 用于表示某个 `属性` 的变化趋势
 
 `props`
 
@@ -21,3 +21,4 @@
 
 | slot name | description | type | values | default / require |
 | --------- | ----------- | ---- | ------ | ----------------- |
+| defaule   | 默认的文本  | -    | -      | -                 |

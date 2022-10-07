@@ -23,57 +23,36 @@
 </template>
 
 <script setup lang="ts">
+import { useTooltipContentProps } from "element-plus";
 import { computed, onMounted, useSlots } from "vue";
 import { toLine } from "../../../utils";
 
 const slots = useSlots();
 
-const props = defineProps({
-  type: {
-    type: String,
-    default: "up",
-  },
-
-  text: {
-    type: String,
-    default: "文字",
-  },
-
-  upIcon: {
-    type: String,
-    default: "ArrowUp",
-  },
-
-  downIcon: {
-    type: String,
-    default: "ArrowDown",
-  },
-
-  upIconColor: {
-    type: String,
-    default: "#f5222d",
-  },
-
-  downIconColor: {
-    type: String,
-    default: "#52c41a",
-  },
-
-  reverseColor: {
-    type: Boolean,
-    default: false,
-  },
-
-  upTextColor: {
-    type: String,
-    default: "rgba(0, 0,0 )",
-  },
-
-  downTextColor: {
-    type: String,
-    default: "rgba(0, 0,0 )",
-  },
-});
+const props = withDefaults(
+  defineProps<{
+    type?: "up" | "down";
+    text?: string;
+    upIcon?: string;
+    downIcon?: string;
+    upIconColor?: string;
+    downIconColor?: string;
+    reverseColor?: boolean;
+    upTextColor?: string;
+    downTextColor?: string;
+  }>(),
+  {
+    type: "up",
+    text: "文字",
+    upIcon: "ArrowUp",
+    downIcon: "ArrowDown",
+    upIconColor: "#f5222d",
+    downIconColor: "#52c41a",
+    reverseColor: false,
+    upTextColor: "rgba(0, 0,0 )",
+    downTextColor: "rgba(0, 0,0 )",
+  }
+);
 
 const textColor = computed(() => {
   return props.type === "up" ? props.upTextColor : props.downTextColor;
