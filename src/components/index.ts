@@ -5,13 +5,15 @@ import Icon from './icon'
 import Trend from './trend'
 import Menu from './menu'
 import Progress from './progress'
+import time from './time'
 
 const components = [
   Area,
   Icon,
   Trend,
   Menu,
-  Progress
+  Progress,
+  time
 ]
 
 export default {
